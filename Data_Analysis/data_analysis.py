@@ -162,7 +162,16 @@ df.isnull().sum()
 df["sex"].head()
 df["sex"].value_counts()
 
+#pandas secim islemleri
+import pandas as pd
+import seaborn as sns
+df = sns.load_dataset("titanic")
+df.index
+df[0:10]
+df.drop(0, axis=0).head()
 
+delete_indexes = [1, 2, 3, 4]
+df.drop(delete_indexes, axis=0).head(10)
 
 
 
